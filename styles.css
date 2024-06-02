@@ -16,7 +16,7 @@ body {
 
 /* Header Styles */
 header {
-    background-color: transparent; /* Set header to be transparent */
+    background-color: #333;
     color: #fff;
     padding: 10px 20px;
     position: fixed;
@@ -54,6 +54,8 @@ nav {
 
 .nav-links a:hover {
     color: #ccc;
+    /* add shadow */
+    text-shadow: #000;
 }
 
 .burger {
@@ -149,7 +151,7 @@ section {
     text-align: center;
     max-width: 1000px;
     margin: 0 auto;
-    background-color: #333; /* Adding a darker background for contrast */
+    
     padding: 40px 20px; /* Adding padding for spacing */
     border-radius: 10px; /* Rounding the corners */
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Adding a subtle shadow */
@@ -180,7 +182,7 @@ section {
 }
 
 .about-image img {
-    width: 100%;
+    width: 70%;
     height: auto;
     margin-bottom: 20px;
     border-radius: 10px; /* Rounding the corners of the image */
@@ -188,12 +190,12 @@ section {
 }
 
 .text {
-    max-width: 100%; /* Limiting the width of the text for better readability */
-    text-align: left; /* Aligning text to the left */
+    max-width: 100%; 
+    text-align: left; 
 }
 
 .text p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.8; /* Increasing line height for better readability */
     color: #fff; /* Changing text color to white for readability */
     margin-bottom: 20px; /* Adding margin below paragraphs */
@@ -215,6 +217,21 @@ section {
 .events-heading {
     text-align: center;
     margin-bottom: 40px;
+    color: #fff;
+    font-size: 36px;
+    text-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+
+}
+
+.events {
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    
+    padding: 40px 20px; /* Adding padding for spacing */
+    border-radius: 10px; /* Rounding the corners */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Adding a subtle shadow */
+    margin-bottom: 40px; /* Adding margin at the bottom */
 }
 
 .event-cards {
@@ -222,6 +239,10 @@ section {
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 40px;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+
 }
 
 .event-card {
@@ -279,6 +300,14 @@ section {
 .register-btn:hover {
     background-color: #ccc;
 }
+.event-card:hover{
+    transition: 0.5s ease;
+    transform: scale(1.1);
+    color: #000 !important;
+    
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+     
+}
 
 /* Gallery Styles */
 .gallery {
@@ -330,6 +359,64 @@ section {
     100% {
         transform: translateX(0);
     }
+}
+
+
+/* Members Section Styles */
+.members {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.members-heading {
+    margin-bottom: 40px;
+    color: #fff; /* Members heading color */
+}
+
+.member-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.member-card {
+    background-color: #333; /* Dark background for member cards */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1); /* Light shadow */
+    overflow: hidden;
+    max-width: 300px;
+    flex-grow: 1;
+}
+
+.member-image img {
+    width: 100%;
+    height: auto;
+}
+
+.member-details {
+    padding: 20px;
+}
+
+.member-details h3 {
+    margin-bottom: 10px;
+    color: #fff; /* Member name color */
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-links a {
+    color: #fff;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ccc;
 }
 
 /* Footer Styles */
