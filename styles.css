@@ -31,7 +31,7 @@ nav {
 }
 
 .logo a {
-    color: #fff;
+    color: #00e6e6;
     font-size: 24px;
     font-weight: 700;
     text-decoration: none;
@@ -41,6 +41,8 @@ nav {
     display: flex;
     list-style: none;
 }
+
+
 
 .nav-links li {
     margin-left: 20px;
@@ -53,15 +55,20 @@ nav {
 }
 
 .nav-links a:hover {
-    color: #ccc;
-    /* add shadow */
-    text-shadow: #000;
+    color:#1affff;
+    font-weight: 500;
+    text-shadow: #1affff 0px 0px 10px;
+    
+}
+.sp{
+    color: #1affff;
 }
 
 .burger {
     display: none;
     cursor: pointer;
 }
+
 
 .burger div {
     width: 25px;
@@ -78,6 +85,9 @@ main {
 
 section {
     padding: 80px 20px;
+}
+.highlight {
+    color: #ccc;
 }
 
 .hero {
@@ -136,7 +146,7 @@ section {
 }
 
 .btn:hover {
-    background-color: #ccc;
+    background-color: #1affff;
 }
 
 .flex {
@@ -177,16 +187,16 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20px; /* Reduced gap for better alignment */
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    gap: 20px; 
+    flex-wrap: wrap; 
 }
 
 .about-image img {
     width: 70%;
     height: auto;
     margin-bottom: 20px;
-    border-radius: 10px; /* Rounding the corners of the image */
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Adding a shadow to the image */
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); 
 }
 
 .text {
@@ -196,24 +206,23 @@ section {
 
 .text p {
     font-size: 16px;
-    line-height: 1.8; /* Increasing line height for better readability */
-    color: #fff; /* Changing text color to white for readability */
-    margin-bottom: 20px; /* Adding margin below paragraphs */
+    line-height: 1.8; 
+    color: #fff; 
+    margin-bottom: 20px; 
 }
 
 .text a {
-    color: #fff; /* Link color */
-    text-decoration: none; /* Removing underline from links */
-    border-bottom: 2px solid #fff; /* Adding a bottom border to links */
-    transition: color 0.3s, border-color 0.3s; /* Adding a transition effect */
+    color: #fff; 
+    text-decoration: none; 
+    border-bottom: 2px solid #fff; 
+    transition: color 0.3s, border-color 0.3s; 
 }
 
 .text a:hover {
-    color: #ccc; /* Hover effect color */
-    border-color: #ccc; /* Hover effect border color */
-}
+    color: #1affff; 
+    border-color: #ccc; 
 
-/* Event Card Styles */
+}
 .events-heading {
     text-align: center;
     margin-bottom: 40px;
@@ -228,10 +237,10 @@ section {
     max-width: 1000px;
     margin: 0 auto;
     
-    padding: 40px 20px; /* Adding padding for spacing */
-    border-radius: 10px; /* Rounding the corners */
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Adding a subtle shadow */
-    margin-bottom: 40px; /* Adding margin at the bottom */
+    padding: 40px 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); 
+    margin-bottom: 40px; 
 }
 
 .event-cards {
@@ -246,10 +255,9 @@ section {
 }
 
 .event-card {
-    background-color: #333; /* Dark background for event cards */
+    background-color: #333; 
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1); /* Light shadow */
-    margin: 20px;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1); 
     overflow: hidden;
     max-width: 300px;
     display: flex;
@@ -298,7 +306,7 @@ section {
 }
 
 .register-btn:hover {
-    background-color: #ccc;
+    background-color: #1affff;
 }
 .event-card:hover{
     transition: 0.5s ease;
@@ -435,5 +443,5 @@ footer {
 }
 
 .social-links a:hover {
-    color: #ccc;
+    color: #1affff;
 }

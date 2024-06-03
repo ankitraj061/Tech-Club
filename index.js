@@ -1,9 +1,26 @@
-document.getElementById("first-id").addEventListener("click",function(){
-    document.getElementById("first-id").innerHTML="Good Bye"
+function animateText(textElement, text, index) {
+    const words = text.split(' ');
     
-})
+    if (index < words.length) {
+        const word = words[index];
+        if (word === 'Tech' || word === 'Club') {
+            textElement.innerHTML += '<span style="color: #1affff">' + word + '</span> ';
+        } else {
+            textElement.textContent += word + ' ';
+        }
+        index++;
+        setTimeout(function() {
+            animateText(textElement, text, index);
+        }, 400);
+    } else {
+        index = 0;
+        textElement.textContent = '';
+        setTimeout(function() {
+            animateText(textElement, text, index);
+        }, 0);
+    }
+}
 
-document.querySelector("#second-id").addEventListener("click",function(){
-    document.querySelector("#second-id").innerHTML="Good Bye"
-    
-})
+const welcomeMessage = document.getElementById("welcome-message");
+
+animateText(welcomeMessage, "Welcome to Tech Club", 0);
